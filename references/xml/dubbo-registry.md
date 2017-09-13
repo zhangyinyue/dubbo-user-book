@@ -33,15 +33,6 @@ table tr:hover {
 }
 </style>
 
-<script type="text/javascript">
-[].slice.call(document.querySelectorAll('table')).forEach(function(el){
-    var wrapper = document.createElement('div');
-    wrapper.className = 'table-area';
-    el.parentNode.insertBefore(wrapper, el);
-    el.parentNode.removeChild(el);
-    wrapper.appendChild(el);
-})
-</script>
 
 注册中心配置：  
 配置类：com.alibaba.dubbo.config.RegistryConfig  
